@@ -1,0 +1,161 @@
+<html><head><base href="https://static.wixstatic.com"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Stefania</title><style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://raw.githubusercontent.com/GuiVicS/LinksStefania/refs/heads/main/desfocado.jpg') center/cover fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+    justify-content:center;
+    max-width: 500px;
+    width: 100%;
+    background: url('https://raw.githubusercontent.com/GuiVicS/LinksStefania/refs/heads/main/foto-fundo.jpg') center/cover;
+    padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.profile p {
+    color: #666;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.link i {
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.9);
+}</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+ 
+            <h1 style="color:white;">Stefania</h1>
+            <p style="color:white;">Sua loja de moda favorita! 👗✨</p>
+<br>
+        
+        <div class="links">
+            <a href="https://api.whatsapp.com/send?l=pt&phone=5516992019446" class="link">
+                <i class="fab fa-whatsapp"></i>
+                Fale Conosco no WhatsApp
+            </a>
+            <a href="https://www.lojastefania.com.br/" class="link">
+                <i class="fas fa-shopping-bag"></i>
+                Visite Nossa Loja Online
+            </a>
+            <a href="https://www.instagram.com/lojastefania/" class="link">
+                <i class="fab fa-instagram"></i>
+                Siga no Instagram
+            </a>
+            <a href="https://www.tiktok.com/@isa.fachinni" class="link">
+                <i class="fab fa-tiktok"></i>
+                Nos acompanhe no TikTok
+            </a>
+        </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.link, .social-icon');
+            
+            links.forEach(link => {
+                link.addEventListener('mouseenter', (e) => {
+                    e.target.style.transform = 'translateY(-5px)';
+                });
+                
+                link.addEventListener('mouseleave', (e) => {
+                    e.target.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body></html>
